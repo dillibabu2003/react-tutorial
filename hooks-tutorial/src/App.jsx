@@ -8,6 +8,11 @@ function App() {
   // const doubleNumber=slowFun(num); ->normal render
   //useMemo uses a variable to store the previous variable  so if we use useMemo for every think it will consumes a lot of memory
   // referencial equlity - everytime we run the function a new themes(new object) is created even though the values are same,there reference are different
+  
+  //useCallBack is similar to useMemo but useMemo will only return the return value while the useCallback function will return the entire function
+  
+  
+  
   const doubleNumber=useMemo(()=>{
     return slowFun(num);
   },[num])
